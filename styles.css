@@ -11,19 +11,23 @@ p {
 }
 
 #nav-bar-container {
-  display: none;
+  opacity: 0;
   grid-template-rows: 1fr 1fr 1fr;
   width: 200px;
+  height: 0;
   border: 1px solid blue;
+  transition: all 1s ease;
+  
 }
 #nav-bar-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+  height: 300px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   width: 200px;
   border: 1px solid blue;
-  position: relative;
-  bottom: 157px;
-  z-index: -1;
+  /* z-index: -1; */
   background: #8BC34A;
 }
 
