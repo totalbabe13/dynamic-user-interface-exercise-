@@ -1,0 +1,21 @@
+
+.menu-element {
+  width: 200px;
+  height: 50px;
+  border: 1px solid blue;
+}
+p {
+  text-align: center;
+}
+
+.nav-bar-container {
+  display: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 200px;
+  /* height: 50px; */
+  border: 1px solid blue;
+}
+
+.nav-menu-item {
+  border: 1px solid red;
+}
