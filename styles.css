@@ -1,19 +1,30 @@
 
-.menu-element {
+#menu-element {
   width: 200px;
   height: 50px;
   border: 1px solid blue;
+  z-index: 1;
+  background-color: #8fe0ea;
 }
 p {
   text-align: center;
 }
 
-.nav-bar-container {
+#nav-bar-container {
   display: none;
   grid-template-rows: 1fr 1fr 1fr;
   width: 200px;
-  /* height: 50px; */
   border: 1px solid blue;
+}
+#nav-bar-container.visible {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 200px;
+  border: 1px solid blue;
+  position: relative;
+  bottom: 157px;
+  z-index: -1;
+  background: #8BC34A;
 }
 
 .nav-menu-item {
