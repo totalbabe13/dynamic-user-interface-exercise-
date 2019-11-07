@@ -1,7 +1,6 @@
 body{
   background-color: blue;
 }
-
 .carousel-container {
     width: 850px;
     height: 66vh;
@@ -11,14 +10,12 @@ body{
     margin-top: 10vh;
     background-color: white;
 }
-
 .slide {
     position: relative;
     top: 1vh;
     height: 64vh;
     border: 1px solid black;
 }
-
 img {
     display: block;
     position: relative;
@@ -26,4 +23,12 @@ img {
     margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+#nav-dots {
+    margin-left: auto;
+    margin-right: auto;
+    height: 9vh;
+    width: 40vw;
+    background-color: #ffffff78;
 }
