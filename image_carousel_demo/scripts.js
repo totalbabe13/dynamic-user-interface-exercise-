@@ -2,7 +2,6 @@ function countSlides(){
   let numOfSlides = document.getElementsByClassName('slide')
   return numOfSlides.length;
 };
-
 function makeNavDots(){
   let numSlides    = countSlides();
   let navContainer = document.getElementById('nav-dots');
@@ -27,5 +26,37 @@ function showImage() {
     imageIndex.className = "slide visible";
   }
        // console.log(currentlyVisible);
-
 }
+function leftAndRightMovement() {
+  let leftArrow = document.getElementById('left');
+  let rightArrow = document.getElementById('right');
+
+  leftArrow.onclick = moveLeft;
+  rightArrow.onclick = moveRight;
+  // console.log(left);
+}
+
+function moveLeft(){
+  let currentlyVisible = document.getElementsByClassName("slide visible")[0]
+  let leftOfCurrent = currentlyVisible.previousElementSibling
+  if(leftOfCurrent.id === "left"){
+    console.log("you've hit the left arrow");
+  } else if (leftOfCurrent.id !== "left") {
+    currentlyVisible.className = "slide";
+    leftOfCurrent.className = "slide visible";
+  }
+}
+
+function moveRight(){
+  let currentlyVisible = document.getElementsByClassName("slide visible")[0]
+  let rightOfCurrent = currentlyVisible.nextElementSibling
+  if(rightOfCurrent.id === "right"){
+    console.log("you've hit the right arrow");
+  } else if (rightOfCurrent.id !== "right") {
+    currentlyVisible.className = "slide";
+    rightOfCurrent.className = "slide visible";
+  }
+}
+ // - - - - - - - - - - -
+makeNavDots();
+leftAndRightMovement();
