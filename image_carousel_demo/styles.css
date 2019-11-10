@@ -21,19 +21,12 @@ body{
 }
 
 .slide.visible {
-  position: relative;
-  top: 1vh;
-  height: 64vh;
-  border: 1px solid black;
-  display: block;
+    position: relative;
+    top: 1vh;
+    height: 64vh;
+    border: 1px solid black;
+    display: block;
 }
-/* .slide.test {
-  position: relative;
-  top: 1vh;
-  height: 64vh;
-  border: 1px solid black;
-  display: none;
-} */
 
 img {
     display: block;
